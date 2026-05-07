@@ -6,8 +6,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
+import java.text.NumberFormat
+import java.util.Locale
+
 class PayrollAdapter(private var payrollList: List<Payroll>) :
     RecyclerView.Adapter<PayrollAdapter.PayrollViewHolder>() {
+
+    private fun formatRupiah(number: Long): String {
+        val localeID = Locale("in", "ID")
+        val numberFormat = NumberFormat.getCurrencyInstance(localeID)
+        return numberFormat.format(number).replace("Rp", "Rp ")
+    }
 
     class PayrollViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvPeriod: TextView = view.findViewById(R.id.tvPayrollPeriod)
@@ -27,9 +36,9 @@ class PayrollAdapter(private var payrollList: List<Payroll>) :
         val payroll = payrollList[position]
         holder.tvPeriod.text = "${payroll.month} ${payroll.year}"
         holder.tvDate.text = payroll.dateIssued
-        holder.tvBasicSalary.text = payroll.basicSalary
-        holder.tvAllowance.text = payroll.allowance
-        holder.tvTotalSalary.text = payroll.totalSalary
+        holder.tvBasicSalary.text = formatRupiah(payroll.basicSalary)
+        holder.tvAllowance.text = formatRupiah(payroll.allowance)
+        holder.tvTotalSalary.text = formatRupiah(payroll.totalSalary)
     }
 
     override fun getItemCount() = payrollList.size

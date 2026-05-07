@@ -26,8 +26,17 @@ class RegisterActivity : AppCompatActivity() {
             val email = etEmail.text.toString().trim()
             val password = etPassword.text.toString().trim()
 
-            if (name.isEmpty() || email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Semua bidang harus diisi", Toast.LENGTH_SHORT).show()
+            // Validasi Input
+            if (name.isEmpty()) {
+                etName.error = "Nama harus diisi"
+                return@setOnClickListener
+            }
+            if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                etEmail.error = "Email tidak valid"
+                return@setOnClickListener
+            }
+            if (password.length < 6) {
+                etPassword.error = "Password minimal 6 karakter"
                 return@setOnClickListener
             }
 
@@ -35,7 +44,7 @@ class RegisterActivity : AppCompatActivity() {
             val newUser = User(
                 name = name,
                 email = email,
-                password = password, // Sekarang password ikut disimpan
+                password = password,
                 role = "Karyawan",
                 department = "IT",
                 status = "Aktif",

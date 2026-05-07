@@ -45,10 +45,10 @@ class PayrollActivity : AppCompatActivity() {
         var payrolls = payrollDao.getAll()
         
         if (payrolls.isEmpty()) {
-            payrollDao.insert(Payroll(month = "Januari", year = "2026", basicSalary = "Rp 5.500.000", allowance = "Rp 1.200.000", totalSalary = "Rp 6.700.000", dateIssued = "01 Jan 2026"))
-            payrollDao.insert(Payroll(month = "Februari", year = "2026", basicSalary = "Rp 5.500.000", allowance = "Rp 1.500.000", totalSalary = "Rp 7.000.000", dateIssued = "01 Feb 2026"))
-            payrollDao.insert(Payroll(month = "Maret", year = "2026", basicSalary = "Rp 5.500.000", allowance = "Rp 1.000.000", totalSalary = "Rp 6.500.000", dateIssued = "01 Mar 2026"))
-            payrollDao.insert(Payroll(month = "April", year = "2026", basicSalary = "Rp 5.500.000", allowance = "Rp 1.000.000", totalSalary = "Rp 6.500.000", dateIssued = "01 Apr 2026"))
+            payrollDao.insert(Payroll(month = "Januari", year = "2026", basicSalary = 5500000, allowance = 1200000, totalSalary = 6700000, dateIssued = "01 Jan 2026"))
+            payrollDao.insert(Payroll(month = "Februari", year = "2026", basicSalary = 5500000, allowance = 1500000, totalSalary = 7000000, dateIssued = "01 Feb 2026"))
+            payrollDao.insert(Payroll(month = "Maret", year = "2026", basicSalary = 5500000, allowance = 1000000, totalSalary = 6500000, dateIssued = "01 Mar 2026"))
+            payrollDao.insert(Payroll(month = "April", year = "2026", basicSalary = 5500000, allowance = 1000000, totalSalary = 6500000, dateIssued = "01 Apr 2026"))
             payrolls = payrollDao.getAll()
         }
         

@@ -35,14 +35,27 @@ class EditUserActivity : AppCompatActivity() {
         etStatus.setText(userStatus)
 
         findViewById<MaterialButton>(R.id.btnUpdateUser).setOnClickListener {
+            val name = etName.text.toString().trim()
+            val dept = etDept.text.toString().trim()
+            val status = etStatus.text.toString().trim()
+
+            if (name.isEmpty()) {
+                etName.error = "Nama tidak boleh kosong"
+                return@setOnClickListener
+            }
+            if (dept.isEmpty()) {
+                etDept.error = "Departemen tidak boleh kosong"
+                return@setOnClickListener
+            }
+
             val updatedUser = User(
                 id = userId,
-                name = etName.text.toString(),
+                name = name,
                 email = userEmail,
                 password = userPass,
                 role = "Karyawan",
-                department = etDept.text.toString(),
-                status = etStatus.text.toString(),
+                department = dept,
+                status = status,
                 initial = userInitial
             )
             AppDatabase.getDatabase(this).userDao().update(updatedUser)
