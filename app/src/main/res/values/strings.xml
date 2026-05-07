@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kelola User</string>
+    <string name="menu_utama">MENU UTAMA</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="absensi">Absensi</string>
+    <string name="riwayat_absensi">Riwayat Absensi</string>
+    <string name="izin_cuti">IZIN &amp; CUTI</string>
+    <string name="pengajuan_izin">Pengajuan Izin</string>
+    <string name="riwayat_izin">Riwayat Izin</string>
+    <string name="admin">ADMIN</string>
+    <string name="approval_izin">Approval Izin</string>
+    <string name="kelola_user">Kelola User</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="tambah_user">Tambah User</string>
+
+    <!-- Login & Register -->
+    <string name="login_title">Selamat Datang</string>
+    <string name="login_subtitle">Silakan masuk ke akun Anda</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="btn_login">Masuk</string>
+    <string name="dont_have_account">Belum punya akun? Daftar</string>
+
+    <string name="register_title">Daftar Akun</string>
+    <string name="register_subtitle">Lengkapi data diri Anda</string>
+    <string name="name_hint">Nama Lengkap</string>
+    <string name="btn_register">Daftar</string>
+    <string name="already_have_account">Sudah punya akun? Masuk</string>
+</resources>

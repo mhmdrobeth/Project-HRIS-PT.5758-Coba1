@@ -1,0 +1,146 @@
+[
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_activity_recruitment.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\activity_recruitment.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_admin.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_rounded_search.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_rounded_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_rounded_white.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_rounded_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_payroll.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_payroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_users.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_users.xml"
+    },
+    {
+        "merged": "com.example.kelolauser.app-debug-4:/layout_activity_recruitment.xml.flat",
+        "source": "com.example.kelolauser.app-main-6:/layout/activity_recruitment.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_dashboard.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_izin.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_izin.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_item_candidate.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\item_candidate.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_plus_circle.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_plus_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_absensi.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_absensi.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_button_add.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_button_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "com.example.kelolauser.app-debug-4:/layout_item_candidate.xml.flat",
+        "source": "com.example.kelolauser.app-main-6:/layout/item_candidate.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_activity_payroll.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\activity_payroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_item_payroll.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\item_payroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_rounded_menu_active.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_rounded_menu_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_item_user.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\item_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_tag_status.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_tag_status.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_layout_bottom_nav.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\layout_bottom_nav.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_tag_admin.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_tag_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\layout_activity_analytics.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\layout\\activity_analytics.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_tag_user.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_tag_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_ic_whatsapp.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\ic_whatsapp.xml"
+    },
+    {
+        "merged": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-debug-4:\\drawable_bg_circle_icon.xml.flat",
+        "source": "C:\\Users\\user\\.gradle\\daemon\\8.5\\com.example.kelolauser.app-main-6:\\drawable\\bg_circle_icon.xml"
+    }
+]

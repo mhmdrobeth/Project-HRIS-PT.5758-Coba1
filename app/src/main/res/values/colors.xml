@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#00A97E</color>
+    <color name="primary_light">#EAF6F3</color>
+    <color name="background">#F8F9FA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#2D3748</color>
+    <color name="text_secondary">#718096</color>
+    <color name="divider">#E2E8F0</color>
+    
+    <color name="tag_admin_bg">#00B0FF</color>
+    <color name="tag_user_bg">#2D3748</color>
+    
+    <color name="action_whatsapp">#25D366</color>
+    <color name="action_email">#00B0FF</color>
+    <color name="action_edit">#00A97E</color>
+    <color name="action_delete">#FF5A5F</color>
+    <!-- Dashboard New Colors -->
+    <color name="bg_jadwal">#F0FDF4</color>
+    <color name="btn_checkin">#22C55E</color>
+    <color name="tag_day_bg">#DCFCE7</color>
+    <color name="tag_day_text">#166534</color>
+
+    <color name="circle_purple">#F5F3FF</color>
+    <color name="icon_purple">#7C3AED</color>
+    <color name="circle_green">#F0FDF4</color>
+    <color name="icon_green">#22C55E</color>
+    <color name="circle_yellow">#FEFCE8</color>
+    <color name="icon_yellow">#CA8A04</color>
+    <color name="circle_red">#FEF2F2</color>
+    <color name="icon_red">#EF4444</color>
+    <color name="circle_blue">#EFF6FF</color>
+    <color name="icon_blue">#3B82F6</color>
+    <color name="circle_gray">#F9FAFB</color>
+    <color name="icon_gray">#6B7280</color>
+
+    <color name="nav_active">#22C55E</color>
+    <color name="nav_inactive">#94A3B8</color>
+    <color name="tag_terlambat_bg">#F59E0B</color>
+    <color name="tag_terlambat_text">#FFFFFF</color>
+    <color name="tag_hadir_bg">#22C55E</color>
+    <color name="tag_hadir_text">#FFFFFF</color>
+</resources>

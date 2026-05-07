@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_delete">#FF5A5F</color>
+    <color name="action_edit">#00A97E</color>
+    <color name="action_email">#00B0FF</color>
+    <color name="action_whatsapp">#25D366</color>
+    <color name="background">#F8F9FA</color>
+    <color name="bg_jadwal">#F0FDF4</color>
+    <color name="btn_checkin">#22C55E</color>
+    <color name="circle_blue">#EFF6FF</color>
+    <color name="circle_gray">#F9FAFB</color>
+    <color name="circle_green">#F0FDF4</color>
+    <color name="circle_purple">#F5F3FF</color>
+    <color name="circle_red">#FEF2F2</color>
+    <color name="circle_yellow">#FEFCE8</color>
+    <color name="divider">#E2E8F0</color>
+    <color name="icon_blue">#3B82F6</color>
+    <color name="icon_gray">#6B7280</color>
+    <color name="icon_green">#22C55E</color>
+    <color name="icon_purple">#7C3AED</color>
+    <color name="icon_red">#EF4444</color>
+    <color name="icon_yellow">#CA8A04</color>
+    <color name="nav_active">#22C55E</color>
+    <color name="nav_inactive">#94A3B8</color>
+    <color name="primary">#00A97E</color>
+    <color name="primary_light">#EAF6F3</color>
+    <color name="tag_admin_bg">#00B0FF</color>
+    <color name="tag_day_bg">#DCFCE7</color>
+    <color name="tag_day_text">#166534</color>
+    <color name="tag_hadir_bg">#22C55E</color>
+    <color name="tag_hadir_text">#FFFFFF</color>
+    <color name="tag_terlambat_bg">#F59E0B</color>
+    <color name="tag_terlambat_text">#FFFFFF</color>
+    <color name="tag_user_bg">#2D3748</color>
+    <color name="text_primary">#2D3748</color>
+    <color name="text_secondary">#718096</color>
+    <color name="white">#FFFFFF</color>
+    <string name="absensi">Absensi</string>
+    <string name="admin">ADMIN</string>
+    <string name="already_have_account">Sudah punya akun? Masuk</string>
+    <string name="app_name">Kelola User</string>
+    <string name="approval_izin">Approval Izin</string>
+    <string name="btn_login">Masuk</string>
+    <string name="btn_register">Daftar</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="dont_have_account">Belum punya akun? Daftar</string>
+    <string name="email_hint">Email</string>
+    <string name="izin_cuti">IZIN &amp; CUTI</string>
+    <string name="kelola_user">Kelola User</string>
+    <string name="login_subtitle">Silakan masuk ke akun Anda</string>
+    <string name="login_title">Selamat Datang</string>
+    <string name="menu_utama">MENU UTAMA</string>
+    <string name="name_hint">Nama Lengkap</string>
+    <string name="password_hint">Kata Sandi</string>
+    <string name="pengajuan_izin">Pengajuan Izin</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="register_subtitle">Lengkapi data diri Anda</string>
+    <string name="register_title">Daftar Akun</string>
+    <string name="riwayat_absensi">Riwayat Absensi</string>
+    <string name="riwayat_izin">Riwayat Izin</string>
+    <string name="tambah_user">Tambah User</string>
+    <style name="Badge">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_gravity">top|end</item>
+        <item name="android:background">@drawable/bg_circle_icon</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CircleIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="CircleIconBg">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/bg_circle_icon</item>
+    </style>
+    <style name="DayTag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_rounded_search</item>
+        <item name="android:backgroundTint">@color/tag_day_bg</item>
+        <item name="android:textColor">@color/tag_day_text</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingHorizontal">8dp</item>
+        <item name="android:paddingVertical">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NavIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="NavIndicatorInactive">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">top|center_horizontal</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="NavItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="NavText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="QuickActionItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">4dp</item>
+    </style>
+    <style name="QuickActionText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Theme.KelolaUserApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
