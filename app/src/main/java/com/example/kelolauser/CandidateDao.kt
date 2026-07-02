@@ -11,4 +11,7 @@ interface CandidateDao {
 
     @Insert
     fun insert(candidate: Candidate)
+
+    @Query("UPDATE candidates SET status = :status WHERE id = :id")
+    fun updateStatus(id: Int, status: String)
 }

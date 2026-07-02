@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:id="@+id/tvDashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard Admin"
+            android:textColor="@color/primary_m2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCurrentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Kamis, 23 April 2026"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Jadwal Kerja Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="0dp"
+            android:backgroundTint="@color/bg_jadwal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_history"
+                        app:tint="@color/text_secondary"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="Jadwal Kerja"
+                        android:textColor="@color/text_secondary"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/tvJadwalWaktu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="08:00 - 17:00"
+                        android:textColor="@color/btn_checkin"
+                        android:textSize="28sp"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.flexbox.FlexboxLayout
+                        android:id="@+id/flexHariKerja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:flexWrap="wrap">
+                        <TextView style="@style/DayTag" android:text="Sen"/>
+                        <TextView style="@style/DayTag" android:text="Sel"/>
+                        <TextView style="@style/DayTag" android:text="Rab"/>
+                        <TextView style="@style/DayTag" android:text="Kam"/>
+                        <TextView style="@style/DayTag" android:text="Jum"/>
+                    </com.google.android.flexbox.FlexboxLayout>
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCheckIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:text="Check In Sekarang"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_add"
+                    app:cornerRadius="16dp"
+                    android:backgroundTint="@color/btn_checkin"
+                    android:paddingHorizontal="24dp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Aksi Cepat Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aksi Cepat"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:useDefaultMargins="true"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:id="@+id/btnPayroll"
+                style="@style/QuickActionItem"
+                android:clickable="true"
+                android:focusable="true">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View style="@style/CircleIconBg" android:backgroundTint="@color/circle_blue"/>
+                    <ImageView style="@style/CircleIcon" android:src="@drawable/ic_payroll" app:tint="@color/icon_blue"/>
+                </FrameLayout>
+                <TextView style="@style/QuickActionText" android:text="Payroll"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnLaporan"
+                style="@style/QuickActionItem"
+                android:clickable="true"
+                android:focusable="true">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View style="@style/CircleIconBg" android:backgroundTint="@color/circle_green"/>
+                    <ImageView style="@style/CircleIcon" android:src="@drawable/ic_history" app:tint="@color/icon_green"/>
+                </FrameLayout>
+                <TextView style="@style/QuickActionText" android:text="Laporan"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnAnalytics"
+                style="@style/QuickActionItem"
+                android:clickable="true"
+                android:focusable="true">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View style="@style/CircleIconBg" android:backgroundTint="@color/circle_purple"/>
+                    <ImageView style="@style/CircleIcon" android:src="@drawable/ic_dashboard" app:tint="@color/icon_purple"/>
+                </FrameLayout>
+                <TextView style="@style/QuickActionText" android:text="HR AI"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnRecruitment"
+                style="@style/QuickActionItem"
+                android:clickable="true"
+                android:focusable="true">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <View style="@style/CircleIconBg" android:backgroundTint="@color/circle_yellow"/>
+                    <ImageView style="@style/CircleIcon" android:src="@drawable/ic_add" app:tint="@color/icon_yellow"/>
+                </FrameLayout>
+                <TextView style="@style/QuickActionText" android:text="Rekrutmen"/>
+            </LinearLayout>
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Kehadiran Terbaru"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvLihatSemua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Lihat Semua"
+                android:textColor="@color/btn_checkin"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_user"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

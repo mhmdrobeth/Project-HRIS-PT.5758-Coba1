@@ -24,12 +24,24 @@ class PayrollAdapter(private var payrollList: List<Payroll>) :
         val tvBasicSalary: TextView = view.findViewById(R.id.tvBasicSalary)
         val tvAllowance: TextView = view.findViewById(R.id.tvAllowance)
         val tvTotalSalary: TextView = view.findViewById(R.id.tvTotalSalary)
+        val btnDownload: View = view.findViewById(R.id.btnDownloadItem)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PayrollViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_payroll, parent, false)
         return PayrollViewHolder(view)
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(payroll: Payroll)
+        fun onDownloadClick(payroll: Payroll)
+    }
+
+    private var listener: OnItemClickListener? = null
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.listener = listener
     }
 
     override fun onBindViewHolder(holder: PayrollViewHolder, position: Int) {
@@ -39,6 +51,14 @@ class PayrollAdapter(private var payrollList: List<Payroll>) :
         holder.tvBasicSalary.text = formatRupiah(payroll.basicSalary)
         holder.tvAllowance.text = formatRupiah(payroll.allowance)
         holder.tvTotalSalary.text = formatRupiah(payroll.totalSalary)
+
+        holder.itemView.setOnClickListener {
+            listener?.onItemClick(payroll)
+        }
+
+        holder.btnDownload.setOnClickListener {
+            listener?.onDownloadClick(payroll)
+        }
     }
 
     override fun getItemCount() = payrollList.size

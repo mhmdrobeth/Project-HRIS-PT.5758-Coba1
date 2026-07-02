@@ -17,8 +17,7 @@
             android:id="@+id/btnBack"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/ic_history"
-            android:rotation="180"
+            android:src="@drawable/ic_back"
             app:tint="@color/text_primary" />
 
         <TextView
@@ -58,8 +57,18 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPayroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:padding="16dp"
         android:clipToPadding="false" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddPayroll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
+        android:text="Tambah Slip Gaji (Admin)"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp" />
 
 </LinearLayout>

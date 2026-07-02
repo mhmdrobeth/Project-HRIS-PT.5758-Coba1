@@ -11,24 +11,34 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:padding="20dp"
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:padding="8dp"
-            android:src="@drawable/ic_users"
-            android:background="@drawable/bg_circle_icon"
-            android:backgroundTint="@color/circle_blue"
-            app:tint="@color/icon_blue"/>
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circle_icon"
+                android:backgroundTint="@color/circle_blue"/>
+            <TextView
+                android:id="@+id/tvCandidateInitial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="@color/icon_blue"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </FrameLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="16dp"
             android:orientation="vertical">
 
             <TextView
@@ -36,6 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nama Calon"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"/>
 
@@ -44,8 +55,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Posisi"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="@color/text_secondary"/>
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="2dp"
+                android:background="@drawable/bg_tag_status"
+                android:backgroundTint="#F5F5F5"
+                android:textColor="#757575"/>
         </LinearLayout>
 
         <TextView

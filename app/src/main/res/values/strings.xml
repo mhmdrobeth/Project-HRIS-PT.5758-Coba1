@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Kelola User</string>
+    <string name="app_name">Maju Mapan</string>
     <string name="menu_utama">MENU UTAMA</string>
     <string name="dashboard">Dashboard</string>
     <string name="absensi">Absensi</string>
     <string name="riwayat_absensi">Riwayat Absensi</string>
+    <string name="persetujuan_cuti">Persetujuan Cuti</string>
+    <string name="pengajuan_cuti">Pengajuan Cuti</string>
+    <string name="riwayat_cuti">Riwayat Cuti</string>
     <string name="izin_cuti">IZIN &amp; CUTI</string>
-    <string name="pengajuan_izin">Pengajuan Izin</string>
-    <string name="riwayat_izin">Riwayat Izin</string>
     <string name="admin">ADMIN</string>
-    <string name="approval_izin">Approval Izin</string>
-    <string name="kelola_user">Kelola User</string>
+    <string name="approval_cuti">Approval Cuti</string>
+    <string name="kelola_user">Maju Mapan</string>
     <string name="pengaturan">Pengaturan</string>
     <string name="tambah_user">Tambah User</string>
 
@@ -27,4 +28,18 @@
     <string name="name_hint">Nama Lengkap</string>
     <string name="btn_register">Daftar</string>
     <string name="already_have_account">Sudah punya akun? Masuk</string>
+
+    <!-- Analytics -->
+    <string name="total_employees">Total Karyawan Terdaftar: %1$d</string>
+    <string name="attendance_summary">Dari total %1$d kehadiran, terdapat %2$d karyawan terlambat.</string>
+    <string name="late_rate">Tingkat Keterlambatan: %1$d%%</string>
+    <string name="total_salary_expense">Total Pengeluaran Gaji: %1$s</string>
+    <string name="average_salary">Rata-rata Gaji: %1$s</string>
+
+    <string-array name="leave_types">
+        <item>Cuti Tahunan</item>
+        <item>Izin Sakit</item>
+        <item>Izin Keperluan Mendesak</item>
+        <item>Lainnya</item>
+    </string-array>
 </resources>

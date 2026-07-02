@@ -39,6 +39,16 @@ class LoginActivity : AppCompatActivity() {
                     if (user != null) {
                         // Cek apakah password cocok
                         if (user.password == password) {
+                            // Simpan session user
+                            val sharedPref = getSharedPreferences("UserSession", android.content.Context.MODE_PRIVATE)
+                            with(sharedPref.edit()) {
+                                putInt("USER_ID", user.id)
+                                putString("USER_NAME", user.name)
+                                putString("USER_EMAIL", user.email) // Simpan Email
+                                putString("USER_ROLE", user.role) // Simpan Role (Admin HRD / Karyawan)
+                                apply()
+                            }
+
                             Toast.makeText(this, "Login Berhasil!", Toast.LENGTH_SHORT).show()
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)

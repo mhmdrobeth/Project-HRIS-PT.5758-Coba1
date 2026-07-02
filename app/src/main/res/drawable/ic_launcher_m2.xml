@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#00A97E"
+        android:pathData="M0,0h108v108h-108z" />
+    <group android:translateX="20" android:translateY="30">
+        <!-- Letter M -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M10,40 L10,10 L25,30 L40,10 L40,40 L34,40 L34,18 L25,31 L16,18 L16,40 Z" />
+        <!-- Number 2 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M45,10 C45,5 60,5 60,15 C60,25 45,30 45,35 L60,35 L60,40 L45,40 L45,35 C45,28 60,22 60,15 C60,10 45,10 45,15 Z" />
+    </group>
+</vector>

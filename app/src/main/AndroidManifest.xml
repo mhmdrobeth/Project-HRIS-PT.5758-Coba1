@@ -2,9 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_m2"
+        android:roundIcon="@drawable/ic_launcher_m2"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.KelolaUserApp"
@@ -22,9 +31,14 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".PayrollActivity" />
+        <activity android:name=".AddPayrollActivity" />
         <activity android:name=".AnalyticsActivity" />
         <activity android:name=".RecruitmentActivity" />
         <activity android:name=".EditUserActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".RegisterFaceActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".PayrollDetailActivity" />
 
     </application>
 

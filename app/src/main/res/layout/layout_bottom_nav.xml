@@ -13,7 +13,9 @@
         android:orientation="horizontal">
 
         <!-- Home (Active) -->
-        <LinearLayout style="@style/NavItem">
+        <LinearLayout
+            android:id="@+id/navHome"
+            style="@style/NavItem">
             <View
                 android:layout_width="32dp"
                 android:layout_height="3dp"
@@ -24,31 +26,41 @@
             <TextView style="@style/NavText" android:text="Home" android:textColor="@color/nav_active"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/NavItem">
+        <LinearLayout
+            android:id="@+id/navAbsensi"
+            style="@style/NavItem">
             <View style="@style/NavIndicatorInactive"/>
             <ImageView style="@style/NavIcon" android:src="@drawable/ic_absensi" app:tint="@color/nav_inactive"/>
             <TextView style="@style/NavText" android:text="Absensi" android:textColor="@color/nav_inactive"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/NavItem">
+        <LinearLayout
+            android:id="@+id/navApproval"
+            style="@style/NavItem">
             <View style="@style/NavIndicatorInactive"/>
             <ImageView style="@style/NavIcon" android:src="@drawable/ic_izin" app:tint="@color/nav_inactive"/>
             <TextView style="@style/NavText" android:text="Approval" android:textColor="@color/nav_inactive"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/NavItem">
+        <LinearLayout
+            android:id="@+id/navKaryawan"
+            style="@style/NavItem">
             <View style="@style/NavIndicatorInactive"/>
             <ImageView style="@style/NavIcon" android:src="@drawable/ic_users" app:tint="@color/nav_inactive"/>
             <TextView style="@style/NavText" android:text="Karyawan" android:textColor="@color/nav_inactive"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/NavItem">
+        <LinearLayout
+            android:id="@+id/navSettings"
+            style="@style/NavItem">
             <View style="@style/NavIndicatorInactive"/>
             <ImageView style="@style/NavIcon" android:src="@drawable/ic_settings" app:tint="@color/nav_inactive"/>
             <TextView style="@style/NavText" android:text="Setelan" android:textColor="@color/nav_inactive"/>
         </LinearLayout>
 
-        <LinearLayout style="@style/NavItem">
+        <LinearLayout
+            android:id="@+id/navProfil"
+            style="@style/NavItem">
             <View style="@style/NavIndicatorInactive"/>
             <ImageView style="@style/NavIcon" android:src="@drawable/ic_history" app:tint="@color/nav_inactive"/>
             <TextView style="@style/NavText" android:text="Profil" android:textColor="@color/nav_inactive"/>

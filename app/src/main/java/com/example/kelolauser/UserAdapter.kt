@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 class UserAdapter(private var userList: List<User>) : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivAvatar: ImageView = itemView.findViewById(R.id.ivAvatar)
+        val tvInitial: TextView = itemView.findViewById(R.id.tvInitial)
         val tvName: TextView = itemView.findViewById(R.id.tvName)
         val tvTime: TextView = itemView.findViewById(R.id.tvTime)
         val tvStatus: TextView = itemView.findViewById(R.id.tvStatus)
@@ -34,8 +34,11 @@ class UserAdapter(private var userList: List<User>) : RecyclerView.Adapter<UserA
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val user = userList[position]
         holder.tvName.text = user.name
-        holder.tvTime.text = user.department // Menggunakan department sebagai info tambahan
+        holder.tvTime.text = user.department
         holder.tvStatus.text = user.status
+        
+        // Tampilkan Inisial di Avatar
+        holder.tvInitial.text = if (user.name.isNotEmpty()) user.name.trim().take(1).uppercase() else "?"
         
         holder.itemView.setOnClickListener {
             listener?.onUserClick(user)

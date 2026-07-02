@@ -10,7 +10,11 @@ data class User(
     val email: String,
     val password: String,
     val role: String,
+    val phone: String = "-",
+    val position: String = "-",
     val department: String,
     val status: String,
-    val initial: String
+    val initial: String,
+    val profileImage: String? = null,
+    val isFaceRegistered: Boolean = false
 )

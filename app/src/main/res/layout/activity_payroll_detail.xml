@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:orientation="vertical">
+
+    <!-- Header Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingHorizontal="16dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            app:tint="@color/text_primary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Slip Gaji Digital"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- "Shape" Slip Gaji Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSlip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E2E8F0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAJU MAPAN"
+                        android:textColor="@color/primary_m2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.05" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EDF2F7" android:layout_marginVertical="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tvPeriodTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="PERIODE JANUARI 2026"
+                        android:textColor="#2D3748"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="24dp"/>
+
+                    <!-- Employee Details -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="20dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NAMA KARYAWAN" android:textSize="10sp" android:textColor="#A0AEC0"/>
+                        <TextView android:id="@+id/tvSlipName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Budi Karyawan" android:textColor="#2D3748" android:textStyle="bold" android:textSize="14sp"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="JABATAN" android:textSize="10sp" android:textColor="#A0AEC0"/>
+                        <TextView android:id="@+id/tvSlipPosition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IT Support" android:textColor="#2D3748" android:textStyle="bold" android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!-- Pendapatan -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RINCIAN PENDAPATAN" android:textSize="11sp" android:textStyle="bold" android:textColor="#2B6CB0" android:layout_marginBottom="10dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gaji Pokok" android:textColor="#4A5568"/>
+                        <TextView android:id="@+id/tvSlipBasic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Rp 4.000.000" android:textColor="#2D3748" android:textStyle="bold"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tunjangan Makan" android:textColor="#4A5568"/>
+                        <TextView android:id="@+id/tvSlipMakan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Rp 500.000" android:textColor="#2D3748"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tunjangan Transport" android:textColor="#4A5568"/>
+                        <TextView android:id="@+id/tvSlipTransport" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Rp 500.000" android:textColor="#2D3748"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bonus Kinerja" android:textColor="#4A5568"/>
+                        <TextView android:id="@+id/tvSlipBonus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Rp 1.000.000" android:textColor="#2D3748"/>
+                    </RelativeLayout>
+
+                    <!-- Potongan -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="POTONGAN" android:textSize="11sp" android:textStyle="bold" android:textColor="#E53E3E" android:layout_marginBottom="10dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pajak &amp; Iuran" android:textColor="#4A5568"/>
+                        <TextView android:id="@+id/tvSlipTotalDeduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="-Rp 600.000" android:textColor="#E53E3E"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EDF2F7" android:layout_marginVertical="16dp"/>
+
+                    <!-- Total -->
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GAJI BERSIH" android:textColor="#1A365D" android:textStyle="bold" android:textSize="15sp"/>
+                        <TextView android:id="@+id/tvSlipNetSalary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Rp 5.400.000" android:textColor="@color/primary_m2" android:textStyle="bold" android:textSize="18sp"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="*Dokumen digital sah oleh Sistem HRIS"
+                        android:textColor="#A0AEC0"
+                        android:textSize="10sp"
+                        android:textStyle="italic"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Download Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDownloadSlip"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:text="Unduh Slip Gaji (PDF)"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:cornerRadius="16dp"
+                android:backgroundTint="@color/primary_m2"
+                app:icon="@drawable/ic_payroll"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
