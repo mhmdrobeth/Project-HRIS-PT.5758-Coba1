@@ -25,6 +25,10 @@ class AttendanceHistoryFragment : Fragment() {
 
         loadAllAttendance()
 
+        view.findViewById<ImageView>(R.id.btnBack).setOnClickListener {
+            parentFragmentManager.popBackStack()
+        }
+
         return view
     }
 
